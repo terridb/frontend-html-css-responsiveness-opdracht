@@ -11,25 +11,98 @@ Table of Contents:
 /*////////////////////////
     1. Global Styles
 ////////////////////////*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body {
     font-family: 'Dosis', sans-serif;
     font-weight: 400;
 }
 
+:root {
+    --big-bg-color: #F26D40;
+    --medium-bg-color: #F69051;
+    --small-bg-color: #F9C48B;
+    --box-bg-color: #FDEFEC;
+    --font-color: #260803;
+}
+
 /*////////////////////////
     2. Typography
 ////////////////////////*/
+p {
+    font-size: 12px;
+}
 
-
+h2 {
+    font-size: 16px;
+}
 
 /*////////////////////////
     3. Areas
 ////////////////////////*/
+body {
+    background-color: var(--small-bg-color);
+}
 
+section {
+    background-color: var(--box-bg-color);
+    border-radius: 10px;
+    margin: 20px;
+    padding: 20px;
+}
 
+p {
+    margin-top: 10px;
+}
 
+img {
+    max-width: 100%;
+    margin-top: 10px;
+}
 
 /*////////////////////////
-    2. Media Queries
+    4. Media Queries
 ////////////////////////*/
+@media screen and (min-width: 768px) {
+    p,
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    body {
+        background-color: var(--medium-bg-color);
+    }
+
+    section {
+        margin: 1.2rem;
+        padding: 1.2rem;
+    }
+
+    p {
+        margin-top: 1.2rem;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    p,
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    body {
+        background-color: var(--big-bg-color);
+    }
+
+    section {
+        margin: 1.5rem;
+        padding: 1.5rem;
+    }
+
+    p {
+        margin-top: 1.5rem;
+    }
+}
